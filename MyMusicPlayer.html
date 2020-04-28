@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="MyMusicPlayer.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<script src="https://kit.fontawesome.com/a5a7a79d9a.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/x-con" href="Images/music.ico">
+</head>
+<body>
+
+	<header id="body-header">
+		<div class="body-header-image">
+			<a href="home.html"><img src="Images/body-header-image.png" height="70px" width="70px"></a>
+		</div>
+		<div id="body-image-title">
+			<span>Music</span> <br> <span class="font-size">Player</span>
+		</div> 
+		<div id="text-3" class="mp-2 ">
+			Favourites
+		</div>
+		<div id="search-bar" class="mp-2">
+				
+				<span class="search-bar-inside">
+					<input type="text" name="search" placeholder="Search">
+				</span>
+				
+		</div>
+		<div id="noti" class="mp-2">
+			<i class="fas fa-bell"></i>
+			<div class="noti-ball">
+			</div>
+		</div>
+		<div id="user-image" class="mp-2">
+			<img src="Images/user.jpg">
+		</div>
+	</header>
+
+	<main id="main-1">
+		
+		<div id="main-images">
+			<div>
+				<img src="https://d2tml28x3t0b85.cloudfront.net/tracks/artworks/000/896/660/original/583c3d.jpeg?1538010764"> 
+			</div>
+			<div>
+				<img src="https://halleonard-closerlook.s3.amazonaws.com/00218878/00218878_Coverz.jpg">
+			</div>
+			<div>
+				<img src="https://edmboost.org/wp-content/uploads/2020/01/1-440-716x708.jpg">
+			</div>
+		</div>
+	
+
+
+
+		<!--<div class="slideshow-container">
+
+			<div class="mySlides fade">
+  				<div class="numbertext">1 / 3</div>
+  				<img src="https://gfx2.decks.de/decks/gfx/co_raw/front/end_d/c4h-jd.jpg" style="height: 30% width:30%">
+  				<div class="text">Caption Text</div>
+			</div>
+
+			<div class="mySlides fade">
+  				<div class="numbertext">2 / 3</div>
+  				<img src="https://i1.sndcdn.com/artworks-000376343880-dgvdgb-t500x500.jpg" style="height: 30% width:30%">
+  				<div class="text">Caption Two</div>
+			</div>
+
+			<div class="mySlides fade">
+  				<div class="numbertext">3 / 3</div>
+  				<img src="https://m.media-amazon.com/images/M/MV5BMGU5YTRjMTUtZDU4Mi00NjFlLWExYTAtMjVkN2JmOTE1Y2Q2XkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg" style="height: 30% width:30%">
+  				<div class="text">Caption Three</div>
+			</div>
+
+		</div><br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+-->
+	
+<!--
+	<div class="section1">
+                <div class="slideshow_wrapper">
+                    <div class="slideshow">
+                        <div class="slide_one slide">
+                            <img src="https://i.ytimg.com/vi/xbBW75suFvE/maxresdefault.jpg" />
+                        </div>
+
+                        <div class="slide_two slide">
+                            <img src="https://d2tml28x3t0b85.cloudfront.net/tracks/artworks/000/896/660/original/583c3d.jpeg?1538010764" />
+                        </div>
+
+                        <div class="slide_three slide">
+                            <img class="slide_img" src="https://mayawillemse.files.wordpress.com/2017/07/believerblog-versie2.png?w=705&h=435&crop=1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        -->
+
+
+
+
+
+		<div id="latest-release">
+			<h3 class="font-size">Latest Release</h3>
+			<div id="songs">
+				<div class="border">
+					<div class="port-display">
+                      <img src="https://images.genius.com/109e5e1425790e8f1b776fea8a074a4d.1000x1000x1.jpg">
+                      <a href="#footer-music" class="icon" id="icon1"><i class="fas fa-play"></i></a>
+                    </div>
+	                  <div class="center">
+	                  	GodZilla
+	                  	<p class="color-date"> 	Jan 28,2020 </p>
+	                  </div>
+	                  <div class="right">
+	                    	<a href="#drop" id="go-back"><i class="fas fa-ellipsis-h"></i></a>
+		                    <div class="drop-menu" id="drop">
+		                  	<a href="#go-back" class="text-align-right"><i class="fas fa-times"></i></a>
+		                  	<ul>
+		                  		<li> <i class="fas fa-play"></i> &nbsp &nbsp Play Now</li>
+		                  		<li> <i class="fas fa-plus"></i>&nbsp &nbsp Add to Queue </li>
+		                  		<li> <i class="far fa-heart"></i> &nbsp  Add to Favourites </li>
+		                  		<li> <i class="fas fa-info-circle"></i> &nbsp Get Info </li>
+		                  	</ul>
+		                  </div>
+		                  <p class="color-date">3:31</p>
+	                  </div>
+	                
+				</div>
+				<div class="border">
+					<div class="port-display">
+						<img src="https://images.genius.com/109e5e1425790e8f1b776fea8a074a4d.1000x1000x1.jpg">
+                      <a href="#footer-music" class="icon" id="icon1"><i class="fas fa-play"></i></a>
+                    </div>
+	                  <div class="center">
+	                  	Premonition - Intro
+	                  	<p class="color-date"> 	Jan 28,2020 </p>
+	                  </div>
+	                  <div class="right">
+	                    	<a href="#drop1" id="go-back1"><i class="fas fa-ellipsis-h"></i></a>
+		                    <div class="drop-menu" id="drop1">
+		                  	<a href="#go-back1" class="text-align-right"><i class="fas fa-times"></i></a>
+		                  	<ul>
+		                  		<li> <i class="fas fa-play"></i> &nbsp &nbsp Play Now</li>
+		                  		<li> <i class="fas fa-plus"></i>&nbsp &nbsp Add to Queue </li>
+		                  		<li> <i class="far fa-heart"></i> &nbsp  Add to Favourites </li>
+		                  		<li> <i class="fas fa-info-circle"></i> &nbsp Get Info </li>
+		                  	</ul>
+		                  </div>
+		                  <p class="color-date">2:54</p>
+	                  </div>
+	                 
+				</div>
+				<div class="border">
+					<div class="port-display">
+						<img src="https://images.genius.com/109e5e1425790e8f1b776fea8a074a4d.1000x1000x1.jpg">
+                      <a href="#footer-music" class="icon" id="icon1"><i class="fas fa-play"></i></a>
+                    </div>
+	                  <div class="center">
+	                  	You Gon' Learn
+	                  	<p class="color-date"> 	Jan 28,2020 </p>
+	                  </div>
+	                  <div class="right">
+	                    	<a href="#drop2" id="go-back2"><i class="fas fa-ellipsis-h"></i></a>
+		                    <div class="drop-menu" id="drop2">
+		                  	<a href="#go-back2" class="text-align-right"><i class="fas fa-times"></i></a>
+		                  	<ul>
+		                  		<li> <i class="fas fa-play"></i> &nbsp &nbsp Play Now</li>
+		                  		<li> <i class="fas fa-plus"></i>&nbsp &nbsp Add to Queue </li>
+		                  		<li> <i class="far fa-heart"></i> &nbsp  Add to Favourites </li>
+		                  		<li> <i class="fas fa-info-circle"></i> &nbsp Get Info </li>
+		                  	</ul>
+		                  </div>
+		                  <p class="color-date">3:55</p>
+	                  </div>
+
+				</div>
+				<div class="border">
+					<div class="port-display">
+						<img src="https://images.genius.com/109e5e1425790e8f1b776fea8a074a4d.1000x1000x1.jpg">
+                      <a href="#footer-music" class="icon" id="icon1"><i class="fas fa-play"></i></a>
+                    </div>
+	                  <div class="center">
+	                  	Unaccommodating
+	                  	<p class="color-date"> 	Jan 28,2020 </p>
+	                  </div>
+	                  <div class="right">
+	                    	<a href="#drop3" id="go-back3"><i class="fas fa-ellipsis-h"></i></a>
+		                    <div class="drop-menu" id="drop3">
+		                  	<a href="#go-back3" class="text-align-right"><i class="fas fa-times"></i></a>
+		                  	<ul>
+		                  		<li> <i class="fas fa-play"></i> &nbsp &nbsp Play Now</li>
+		                  		<li> <i class="fas fa-plus"></i>&nbsp &nbsp Add to Queue </li>
+		                  		<li> <i class="far fa-heart"></i> &nbsp  Add to Favourites </li>
+		                  		<li> <i class="fas fa-info-circle"></i> &nbsp Get Info </li>
+		                  	</ul>
+		                  </div>
+		                  <p class="color-date">3:36</p>
+	                  </div>
+	                  
+	 			</div>
+				
+			</div>
+		</div>
+
+		<div id="popular-artist">
+			<h3 class="font-size"> Popular Artists </h3>
+			<div class="inside-pa">
+				<div class="inside-pa-image"> <figure><img src="https://www.katyperry.com/files/2019/08/KP-Small-Talk.jpg"><a href="MyMusicPlayer2.html" class="icon" id="icon1"><i class="fas fa-play"></i></a><figcaption class="text-center">Katy Perry</figcaption></figure></div>
+				<div class="inside-pa-image"> 
+					<figure> 
+						<img src="https://i.redd.it/e960166rl7rz.jpg">
+						<a href="MyMusicPlayer2.html" class="icon" id="icon1">
+							<i class="fas fa-play"></i>
+						</a>
+						<figcaption class="text-center">Eminem</figcaption>
+					</figure>
+				</div>
+				<div class="inside-pa-image"> <figure> <img src="https://www.rollingstone.com/wp-content/uploads/2019/12/TaylorSwiftTimIngham.jpg?resize=900,600&w=450"><a href="MyMusicPlayer2.html" class="icon" id="icon1"><i class="fas fa-play"></i></a><figcaption class="text-center">Taylor Swift</figcaption></figure></div>
+				<div class="inside-pa-image"> <figure><img src="https://idolwiki.com/pics/AlanWalker/AlanWalker.jpg"><a href="MyMusicPlayer2.html" class="icon" id="icon1"><i class="fas fa-play"></i></a><figcaption class="text-center">Alan Walker</figcaption></figure></div>
+				<div class="inside-pa-image"> <figure><img src="https://yt3.ggpht.com/a/AGF-l7_mGsQjw1lWyx_1keNShTNnP6kWkPerGrThEg=s900-c-k-c0xffffffff-no-rj-mo"><a href="MyMusicPlayer2.html" class="icon" id="icon1"><i class="fas fa-play"></i></a><figcaption class="text-center">Bruno Mars</figcaption></figure></div>
+				<div class="inside-pa-image"> <figure><img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg"><a href="MyMusicPlayer2.html" class="icon" id="icon1"><i class="fas fa-play"></i></a><figcaption class="text-center">Ed Sheeran</figcaption></figure></div>
+			</div>
+		</div>
+
+		<div id="stations" class="white">
+			<div class="stations-logo">
+				<div class="yellow-1"> 
+					<div class="yellow-2">
+						<div class="orange-1">
+							<div class="body-header-image">
+							<img src="Images/body-header-image.png" height="70px" width="70px"> <h4 class="white"> Stations</h4></div>
+						</div>
+					</div>
+				</div>
+		    </div>
+
+		    <div class="stations-border">
+		    	<div class="stations-border-image">
+		    		<img src="https://www.aviaspaindy.com/wp-content/uploads/2018/01/cute-couple-pic-love-quotes-love-couples-romantic-love-couple-quotes-images-fine-hd.jpg"> 
+		    		<div class="text-position"> Love </div>
+		    	</div>
+		    	<div class="stations-border-image">
+		    		<img src="https://image.shutterstock.com/image-vector/retro-music-compact-cassette-vintage-600w-1109470517.jpg"> 
+		    		<div class="text-position"> Retro </div>
+		    	</div>
+		    	<div class="stations-border-image">
+		    		<img src="https://i.ytimg.com/vi/D8BgYz_0mBU/maxresdefault.jpg"> 
+		    		<div class="text-position"> Chill </div>
+		    	</div>
+		    	<div class="stations-border-image">
+		    		<img src="https://i1.wp.com/www.fitabsolute.com/wp-content/uploads/2018/04/rockmyrun-the-best-running-and-workout-music-in-the-world-art-work.jpg?fit=358%2C358&ssl=1">
+		    		<div class="text-position"> Work <br>Out </div>
+		    	</div>
+		    	<div class="stations-border-image">
+		    		<img src="https://image.shutterstock.com/image-vector/hard-rock-music-poster-600w-635971010.jpg"> 
+		    		<div class="text-position"> Rock </div>
+		    	</div>
+		    	<div class="stations-border-image">
+		    		<img src="https://pyxis.nymag.com/v1/imgs/3a3/b1f/2141226b8ab1ae07afe4b541ee0d2b0825-11-yic-pop-essay.2x.rsocial.w600.jpg"> 
+		    		<div class="text-position"> Pop </div>
+		    	</div>
+		    </div>
+		</div>
+
+		<div id="stations-2">
+			<div class="stations-2-image">
+				<img src="https://i.ytimg.com/vi/YGZ6KZ9TR-M/maxresdefault.jpg">
+				<div class="text-position"> Party </div>
+			</div>
+			<div class="stations-2-image">
+				<img src="https://pbs.twimg.com/profile_images/1168423442066092035/vy5_sPuv_400x400.jpg">
+				<div class="text-position"> Electronic </div>
+			</div>
+			<div class="stations-2-image">
+				<img src="https://tractionlife.com/wp-content/uploads/2013/04/best-road-trip-music.jpg">
+				<div class="text-position"> Road Trip </div>
+			</div>
+		</div>
+
+		<div class="lastest-songs-eh">
+			<h3 class="font-size">Latest English</h3>
+			<div class="inside-eh">
+				<div class="inside-pa-image"> <figure> <img src="https://i.ytimg.com/vi/XAdFt9GI-lY/maxresdefault.jpg"><figcaption> N.R.I <br> <span class="color-date"> Apr 24, 2020 </span></figcaption></figure></div>
+				<div class="inside-pa-image"> <figure> <img src="https://mp3global.org/wp-content/uploads/2020/04/Juice-WRLD-Righteous-1024x1024.jpg"><figcaption> Righteous <br> <span class="color-date"> Apr 24, 2020 </span></figcaption></figure></div>
+				<div class="inside-pa-image"> <figure> <img src="https://i2.wp.com/mp3flare.com/wp-content/uploads/2020/04/Kygo-Ft.-Zak-Abel-%E2%80%93-Freedom.jpg?fit=620%2C620&ssl=1"><figcaption> Freedom<br> <span class="color-date"> Apr 17, 2020 </span></figcaption></figure></div>
+				<div class="inside-pa-image"> <figure> <img src="https://pmcvariety.files.wordpress.com/2020/04/travis-scott-fortnite.png"><figcaption> THE SCOTTS<br> <span class="color-date"> Apr 24, 2020  </span></figcaption></figure></div>
+			</div>
+		</div>
+
+		<div class="lastest-songs-eh">
+			<h3 class="font-size">Latest Hindi</h3>
+			<div class="inside-eh">
+
+				<div class="inside-pa-image"> <figure> <img src="https://cover.loadbig.info/thumb/oyamt/cover.jpg"><figcaption> Drama <br> <span class="color-date"> Apr 27,2020 </span></figcaption></figure></div>
+				<div class="inside-pa-image"> <figure> <img src="https://c.saavncdn.com/710/Aaj-Bhi-Hindi-2020-20200407000137-500x500.jpg"><figcaption> Aaj Bhi <br> <span class="color-date"> Apr 8, 2020 </span></figcaption></figure></div>
+				<div class="inside-pa-image"> <figure> <img src="https://toplyricssite.com/wp-content/uploads/2020/04/Fikar-Lyrics-810x456.jpg"><figcaption> Fikar <br> <span class="color-date"> Apr 20, 2020 </span></figcaption></figure></div>
+				<div class="inside-pa-image"> <figure> <img src="https://heraldjournalism.com/wp-content/uploads/2020/03/bhula-dunga-song-1068x853.jpg"><figcaption> Bhula Dunga <br> <span class="color-date"> Mar 24, 2020 </span></figcaption></figure></div>
+				
+
+			</div>
+		</div>
+		
+	</main>
+
+	<aside>
+		<h2> Queue</h2>
+		<a href="#drop-q" class="q1" id="go-back-q"> Queue ^ </a>
+		<div class="drop-menu" id="drop-q">
+		    <a href="#go-back-q" class="text-align-right"><i class="fas fa-times"></i></a>
+		    <ul>
+		    	<li>&nbsp &nbsp Playlist </li>
+		        <li>&nbsp &nbsp Favourite Songs</li>
+		    </ul>
+		</div>
+		<div class="q-list">
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-1">
+					<img src="https://i.ytimg.com/vi/62Q2PfeiK68/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Greatest <br> <span class="q-color">Eminem </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-2">
+					<img src="https://upload.wikimedia.org/wikipedia/en/d/da/Alan_Walker_-_Faded.png" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Faded <br><span class="q-color">Alan Walker </span> </div>
+				<div class="q-emoji q-color">
+						<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-3">
+					<img src="https://i.ytimg.com/vi/glyCpp3ddJg/hqdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Firework <br><span class="q-color">Katy Perry </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-4">
+					<img src="https://i1.sndcdn.com/artworks-000192258626-ye0q82-t500x500.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Don't Let Me Down <br><span class="q-color">The Chainsmokers </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-5">
+					<img src="https://m.media-amazon.com/images/M/MV5BMmVjNTViYmMtY2MxZS00NzJkLTlkNmUtNDc1ODAzMzExNjI1XkEyXkFqcGdeQXVyNzU3Nzk4MDQ@._V1_.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Not Afraid <br><span class="q-color">Eminem </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-6">
+					<img src="https://pbs.twimg.com/media/D1nTjQPXcAAEpnD.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Someone Like You <br> <span class="q-color">Adele</span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-7">
+					<img src="https://i.ytimg.com/vi/gv9hrQzU0cA/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Somebody's Me <br><span class="q-color">Enrique Iglesias </span> </div>
+				<div class="q-emoji q-color">
+						<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-8">
+					<img src="https://i.ytimg.com/vi/YVPrCdChOAk/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Falling <br><span class="q-color">Alesso </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-9">
+					<img src="https://i.ytimg.com/vi/CevxZvSJLk8/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Roar <br><span class="q-color">Katy Perry </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-10">
+					<img src="https://i.ytimg.com/vi/PIh2xe4jnpk/hqdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Rude <br><span class="q-color"> Magic </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-11">
+					<img src="https://i.ytimg.com/vi/62Q2PfeiK68/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Greatest <br> <span class="q-color">Eminem </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-12">
+					<img src="https://upload.wikimedia.org/wikipedia/en/d/da/Alan_Walker_-_Faded.png" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Faded <br><span class="q-color">Alan Walker </span> </div>
+				<div class="q-emoji q-color">
+						<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-13">
+					<img src="https://i.ytimg.com/vi/glyCpp3ddJg/hqdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Firework <br><span class="q-color">Katy Perry </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-14">
+					<img src="https://i1.sndcdn.com/artworks-000192258626-ye0q82-t500x500.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Don't Let Me Down <br><span class="q-color">The Chainsmokers </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-15">
+					<img src="https://m.media-amazon.com/images/M/MV5BMmVjNTViYmMtY2MxZS00NzJkLTlkNmUtNDc1ODAzMzExNjI1XkEyXkFqcGdeQXVyNzU3Nzk4MDQ@._V1_.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Not Afraid <br><span class="q-color">Eminem </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-16">
+					<img src="https://pbs.twimg.com/media/D1nTjQPXcAAEpnD.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Someone Like You <br> <span class="q-color">Adele</span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-17">
+					<img src="https://i.ytimg.com/vi/gv9hrQzU0cA/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Somebody's Me <br><span class="q-color">Enrique Iglesias </span> </div>
+				<div class="q-emoji q-color">
+						<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-18">
+					<img src="https://i.ytimg.com/vi/YVPrCdChOAk/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Falling <br><span class="q-color">Alesso </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-19">
+					<img src="https://i.ytimg.com/vi/CevxZvSJLk8/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Roar <br><span class="q-color">Katy Perry </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			
+
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-13">
+					<img src="https://i.ytimg.com/vi/glyCpp3ddJg/hqdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Firework <br><span class="q-color">Katy Perry </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-14">
+					<img src="https://i1.sndcdn.com/artworks-000192258626-ye0q82-t500x500.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Don't Let Me Down <br><span class="q-color">The Chainsmokers </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-15">
+					<img src="https://m.media-amazon.com/images/M/MV5BMmVjNTViYmMtY2MxZS00NzJkLTlkNmUtNDc1ODAzMzExNjI1XkEyXkFqcGdeQXVyNzU3Nzk4MDQ@._V1_.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Not Afraid <br><span class="q-color">Eminem </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-16">
+					<img src="https://pbs.twimg.com/media/D1nTjQPXcAAEpnD.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Someone Like You <br> <span class="q-color">Adele</span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-17">
+					<img src="https://i.ytimg.com/vi/gv9hrQzU0cA/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Somebody's Me <br><span class="q-color">Enrique Iglesias </span> </div>
+				<div class="q-emoji q-color">
+						<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-18">
+					<img src="https://i.ytimg.com/vi/YVPrCdChOAk/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Falling <br><span class="q-color">Alesso </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+			<div class="inside-q-list">
+				<div class="inside-q-list-image" id="q-19">
+					<img src="https://i.ytimg.com/vi/CevxZvSJLk8/maxresdefault.jpg" style="opacity: 0.7;">
+					<div class="q-play"> <i class="fas fa-play"></i></div>
+				</div>
+				<div class="inside-q-text"> Roar <br><span class="q-color">Katy Perry </span> </div>
+				<div class="q-emoji q-color">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+
+
+		</div>
+	</aside>
+
+   
+   
+     <footer id="footer-music">
+     	 <div>
+			<img src="https://cdn.cnn.com/cnnnext/dam/assets/200117021516-02-eminem-new-album-exlarge-169.jpg">
+		</div>
+		<div class="author mp-1">
+				Godzilla
+				<br> 
+				<span class="text-4">Eminem</span>
+		</div>
+		<div class="text-4 mp-1 emoji">
+				<span><i class="fas fa-heartbeat"></i>&nbsp<i class="fas fa-ban"></i></span>
+		</div>
+		<div class="player">
+				<div class="play-buttons">
+							<span class="text-4"><i class="fas fa-random"></i> </span><!-- &nbsp &nbsp &nbsp &nbsp -->
+							<span class="whitesmoke"><i class="fas fa-step-backward"></i> </span><!-- &nbsp &nbsp &nbsp &nbsp -->
+							<span class="white pause"><i class="fas fa-pause"></i></span><!-- &nbsp &nbsp &nbsp &nbsp -->
+							<span class="whitesmoke"><i class="fas fa-step-forward"></i> </span><!-- &nbsp &nbsp &nbsp &nbsp -->
+							<span class="text-4"><i class="fas fa-redo-alt"></i></span>
+				</div>
+				<div class="text-4 player-line">
+					 <div>1:39</div>
+					 <div class="border-player-line">
+					 	<div class="forty-percent">
+					 		<div class="white-ball">
+
+					 		</div>
+					 	</div>
+					 </div>
+					 <div> 3:31 </div>
+				</div>
+		</div>
+		<div class="last-features">
+				<div class="playlist mr-75">
+					<i class="fas fa-bars"></i>
+					<span class="small-icon"><i class="fas fa-play"></i></span>
+				</div>
+				<div class="mr-75"><i class="fas fa-assistive-listening-systems"></i></div>
+				<div ><i class="fas fa-volume-up"></i></div>
+				<div class="border-player-line mr-75">
+					 	<div class="forty-percent">
+					 		<div class="white-ball">
+
+					 		</div>
+					 	</div>
+				</div>
+				<i class="fas fa-expand-alt"></i>
+		</div>
+	</footer>
+	
+
+</body>
+</html>
